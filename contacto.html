@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco Vallejos | Contactame</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+    <!-- Logo y Barra de Navegacion -->
+    <header>
+        <div class="logo">
+            <img src="img/Logo.png" alt="Logo">
+        </div>
+        <div class="navegacion">
+            <nav>
+                <div class="barraNavegacion">
+                    <a href="index.html">INICIO</a>
+                    <a href="amigos.html">AMIGOS</a>
+                    <a href="estudios.html">ESTUDIOS</a>
+                    <a href="familia.html">FAMILIA</a>
+                    <a class="activo" href="contacto.html">CONTACTO</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- FIN - Logo y Barra de Navegacion -->
+    <div class="espacio cienpx"></div>
+    <!-- INICIO - Cuerpo -->
+    <div class="contenedor">
+        <!-- Bootstrap 5 Contact Form Snippet -->
+        <div class="container-fluid px-5 my-5">
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="card border-0 rounded-3 shadow-lg overflow-hidden">
+                        <div class="card-body p-0">
+                            <div class="row g-0">
+                                <div class="col-sm-6 d-none d-sm-block bg-image fondo">
+                                    <img src="img/fondo.jpg" alt="">
+                                </div>
+                                <div class="col-sm-6 p-4">
+                                    <div class="text-center">
+                                        <div class="h3 fw-light">Contactame</div>
+                                        <br>
+                                        <p class="mb-4 text-muted">Debe completar los campos para que se habilite el boton Enviar</p>
+                                    </div>
+                                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                        <!-- Name Input -->
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" id="name" type="text" placeholder="Ingrese su nombre"
+                                                data-sb-validations="required" />
+                                            <label for="name">Nombre</label> <br>
+                                            <div class="invalid-feedback" data-sb-feedback="name:required">Su nombre es requerido.</div>
+                                        </div>
+                                        <!-- Email Input -->
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" id="emailAddress" type="email"
+                                                placeholder="Ingrese su Correo Electronico" data-sb-validations="required,email" />
+                                            <label for="emailAddress">Correo Electronico</label> <br>
+                                            <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Su correo electronico es requeriedo.</div>
+                                            <div class="invalid-feedback" data-sb-feedback="emailAddress:email">El correo electronico no es valido.</div>
+                                        </div>
+                                        <!-- Message Input -->
+                                        <div class="form-floating mb-3">
+                                            <textarea class="form-control" id="message" type="text"
+                                                placeholder="Mensaje" style="height: 10rem;"
+                                                data-sb-validations="required"></textarea>
+                                            <label for="message">Mensaje</label>
+                                            <div class="invalid-feedback" data-sb-feedback="message:required">Mensaje es requerido.</div>
+                                        </div>
+                                        <!-- Submit success message -->
+                                        <div class="d-none" id="submitSuccessMessage">
+                                            <div class="text-center mb-3">
+                                                <div class="fw-bolder">Formulario enviado correctamente</div>
+                                            </div>
+                                        </div>
+                                        <!-- Submit error message -->
+                                        <div class="d-none" id="submitErrorMessage">
+                                            <div class="text-center text-danger mb-3">Mensaje con error de envio!</div>
+                                        </div>
+                                        <!-- Submit button -->
+                                        <div class="d-grid">
+                                            <button class="btn btn-primary btn-lg disabled boton" id="submitButton"
+                                                type="submit">Enviar</button>
+                                                <!-- <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Enviar</a> -->
+                                        </div>
+                                    </form>
+                                    <!-- End of contact form -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CDN Link to SB Forms Scripts -->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </div>
+    <!-- FIN - Cuerpo -->
+    <div class="espacio cienpx"></div>
+    <!-- INICIO - Footer -->
+    <footer id="footer" class="fila-footer">
+        <div class="col-33">
+            <p>Datos de Contacto</p>
+            <p class="flex-start">
+                <img class="m-r-small" src="img/map.svg" alt="icono de maoa">
+                Oxapampa, Oxapampa, Pasco - Jr. Hassinger 920
+            </p>
+            <!-- <p>Jr. Hassinger 920</p> -->
+            <p class="flex-start">
+                <img class="m-r-small" src="img/phone.svg" alt="Icono de telefono">
+                +51 997857951
+            </p>
+            <p class="flex-start">
+                <img class="m-r-small" src="img/mail.svg" alt="Icono de email">
+                vallejos.contrerasm@gmail.com
+            </p>
+        </div>
+        <div class="col-33">
+            <a href="https://goo.gl/maps/sjQYy4EmxYeKQaAn9" target="_blank"><img src="img/mapa.jpg" alt="Mapa"></a>
+        </div>
+        <div class="col-33">
+            <div class="flex-around">
+                <a href="https://www.facebook.com/marko.vc.92/" target="_blank">
+                    <img class="rrss" src="img/facebook.svg" alt="Icono de Facebook">
+                </a>
+                <a href="https://www.linkedin.com/in/marcovallejos159/" target="_blank">
+                    <img class="rrss" src="img/linkedin.svg" alt="Icono de Linkedin">
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=51997857951" target="_blank">
+                    <img class="rrss" src="img/whatsapp-square.svg" alt="Icono de whatsapp">
+                </a>
+                <a href="https://www.instagram.com/marko_ant_159/" target="_blank">
+                    <img class="rrss" src="img/instagram-circle.svg" alt="Icono de Instagram">
+                </a>
+            </div>
+            <br>
+            <div class="flex-around m-t">
+                <a href="contacto.html#legal">Aviso Legal</a>
+                <a href="contacto.html#cookies">Politica de cookies</a>
+            </div>
+            <br>
+            <br><br>
+            <p class="copyright m-t">&copy; Marco Vallejos All rights reserved</p>
+        </div>
+    </footer>
+    <!-- FIN - Footer -->
+</body>
+
+</html>
